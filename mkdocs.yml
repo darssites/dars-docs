@@ -1,0 +1,10 @@
+site_name: Dars Docs
+site_description: The documentation for dars, the static site generator.
+site_author: gusg21
+theme: 'readable'
+repo_url: https://github.com/darssites/dars/
+
+pages:
+  - Home: 'index.md'
+  - Docs:
+    - Getting Started: 'getting-started.md'

@@ -1,0 +1,24 @@
+{
+    "docs": [
+        {
+            "location": "/",
+            "text": "Welcome to the Dars Documentation!\n\n\nThe simple, Python-based HTML alternative that can double as a framework.\n\n\nSee \nGetting Started\n to get going.",
+            "title": "Home"
+        },
+        {
+            "location": "/#welcome-to-the-dars-documentation",
+            "text": "The simple, Python-based HTML alternative that can double as a framework.  See  Getting Started  to get going.",
+            "title": "Welcome to the Dars Documentation!"
+        },
+        {
+            "location": "/getting-started/",
+            "text": "Getting Started\n\n\nWelcome to dars! This tutorial will help you to get everything set up and running.\n\n\nFirst download Python \n3\n from there website \nhere\n. Then, open up your favorite shell and type: \npython --version\n. You should see \nPython [version number]\n. If you don't try reinstalling.\n\n\nThen, head over to dars' \nproject page\n and click the green \"Download\" button, or, if you've got git, you can clone it from \nhttp://github.com/darssites/dars\n.\n\n\nNow open the folder you got and edit the \nuser.py\n file in your favorite editor (I use \natom\n). This file is where you put all of your website's code, and should look a bit like this:\n\n\n#\n# The user's code.\n#\n\nfrom classes.Paragraph import Paragraph\n\ndef code(page):\n\ntext = Paragraph(\"Mooooooo!\")\npage.append(text)\n\npage.addDefaultStyle()\n\npage.close()\n\n\n\nAlthough the code from \ndef code(page):\n to \npage.addDefaultStyle()\n changes a lot.",
+            "title": "Getting Started"
+        },
+        {
+            "location": "/getting-started/#getting-started",
+            "text": "Welcome to dars! This tutorial will help you to get everything set up and running.  First download Python  3  from there website  here . Then, open up your favorite shell and type:  python --version . You should see  Python [version number] . If you don't try reinstalling.  Then, head over to dars'  project page  and click the green \"Download\" button, or, if you've got git, you can clone it from  http://github.com/darssites/dars .  Now open the folder you got and edit the  user.py  file in your favorite editor (I use  atom ). This file is where you put all of your website's code, and should look a bit like this:  #\n# The user's code.\n#\n\nfrom classes.Paragraph import Paragraph\n\ndef code(page):\n\ntext = Paragraph(\"Mooooooo!\")\npage.append(text)\n\npage.addDefaultStyle()\n\npage.close()  Although the code from  def code(page):  to  page.addDefaultStyle()  changes a lot.",
+            "title": "Getting Started"
+        }
+    ]
+}
