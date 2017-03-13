@@ -8,7 +8,13 @@ pages:
   - Home: 'index.md'
   - Docs:
     - Getting Started: 'getting-started.md'
-    - Classes: # The actuall class-by-class docs
+    - Classes: # The actual class-by-class docs
       - Paragraph: 'classes/paragraph.md'
       - Heading: 'classes/heading.md'
       - Link: 'classes/link.md'
+      - Bold: 'classes/bold.md'
+      - Code: 'classes/code.md'
+      - Blockquote: 'classes/blockquote.md'
+      - Anchor: 'classes/anchor.md'
+      - Contact: 'classes/contact.md'
+      - External: 'classes/external.md'
