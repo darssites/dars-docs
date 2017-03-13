@@ -2,7 +2,7 @@
     "docs": [
         {
             "location": "/",
-            "text": "Welcome to the Dars Documentation!\n\n\nThe simple, Python-based HTML alternative that can double as a framework.\n\n\nSee \nGetting Started\n to get going.",
+            "text": "Welcome to the \nDars\n Documentation!\n\n\nThe simple, Python-based HTML alternative that can double as a framework.\n\n\nSee \nGetting Started\n to get going.",
             "title": "Home"
         },
         {
