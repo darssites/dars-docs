@@ -74,6 +74,96 @@
             "location": "/classes/link/#syntax",
             "text": "obj = Link(\"Google\", target=\"http://google.com/\")  Produces:  <a href=\"http://google.com\">Google</a>  You can also really easily add an onclick javascript function to said link:  obj = Link(\"Google\", target=\"http://google.com/\", function=\"coolKids()\")  Produces:  <a href=\"http://google.com\" onclick=\"coolKids()\">Google</a>  And if you don't specify a target, the link won't go anywhere:  obj = Link(\"Google\", function=\"coolKids()\")  Produces:  <a href=\"#\" onclick=\"coolKids()\">Google</a>",
             "title": "Syntax"
+        },
+        {
+            "location": "/classes/bold/",
+            "text": "Bold Class\n\n\nThis class is the dars wrapper for the \n<b></b>\n element of HTML.\n\n\nSyntax\n\n\nobj = Bold(\"spam-o\")\n\n\n\n\nProduces:\n\n\n<b>spam-o</b>",
+            "title": "Bold"
+        },
+        {
+            "location": "/classes/bold/#bold-class",
+            "text": "This class is the dars wrapper for the  <b></b>  element of HTML.",
+            "title": "Bold Class"
+        },
+        {
+            "location": "/classes/bold/#syntax",
+            "text": "obj = Bold(\"spam-o\")  Produces:  <b>spam-o</b>",
+            "title": "Syntax"
+        },
+        {
+            "location": "/classes/code/",
+            "text": "Code Class\n\n\nThis class is the dars wrapper for the \n<code></code>\n element of HTML.\n\n\nSyntax\n\n\nobj = Code(\"print('Oh, hello there.')\")\n\n\n\n\nProduces:\n\n\n<code>print('Oh, hello there.')</code>",
+            "title": "Code"
+        },
+        {
+            "location": "/classes/code/#code-class",
+            "text": "This class is the dars wrapper for the  <code></code>  element of HTML.",
+            "title": "Code Class"
+        },
+        {
+            "location": "/classes/code/#syntax",
+            "text": "obj = Code(\"print('Oh, hello there.')\")  Produces:  <code>print('Oh, hello there.')</code>",
+            "title": "Syntax"
+        },
+        {
+            "location": "/classes/blockquote/",
+            "text": "Blockquote Class\n\n\nThis class is the dars wrapper for the \n<blockquote></blockquote>\n element of HTML.\n\n\nSyntax\n\n\nobj = Blockquote(\"spam-o\")\n\n\n\n\nProduces:\n\n\n<blockquote>spam-o</blockquote>",
+            "title": "Blockquote"
+        },
+        {
+            "location": "/classes/blockquote/#blockquote-class",
+            "text": "This class is the dars wrapper for the  <blockquote></blockquote>  element of HTML.",
+            "title": "Blockquote Class"
+        },
+        {
+            "location": "/classes/blockquote/#syntax",
+            "text": "obj = Blockquote(\"spam-o\")  Produces:  <blockquote>spam-o</blockquote>",
+            "title": "Syntax"
+        },
+        {
+            "location": "/classes/anchor/",
+            "text": "Anchor Class\n\n\nThis class is the dars wrapper for the \n<a id=\"\"></a>\n element of HTML.\n\n\nSyntax\n\n\nobj = Anchor(\"spam-o\", \"anchor-of-cool\")\n\n\n\n\nWhere the first argument is the text and the second is the Anchor ID.\n\n\nProduces:\n\n\n<a id=\"anchor-of-cool\">spam-o</a>",
+            "title": "Anchor"
+        },
+        {
+            "location": "/classes/anchor/#anchor-class",
+            "text": "This class is the dars wrapper for the  <a id=\"\"></a>  element of HTML.",
+            "title": "Anchor Class"
+        },
+        {
+            "location": "/classes/anchor/#syntax",
+            "text": "obj = Anchor(\"spam-o\", \"anchor-of-cool\")  Where the first argument is the text and the second is the Anchor ID.  Produces:  <a id=\"anchor-of-cool\">spam-o</a>",
+            "title": "Syntax"
+        },
+        {
+            "location": "/classes/contact/",
+            "text": "Contact Class\n\n\nThis class is a simple one-liner for making a Contact Information area.\n\n\nSyntax\n\n\nobj = Bold(\"Martian Waffles\", \"123-654-7890\", \"info@martian-waffles.com\", \"Call us or e-mail us at anytime!\")\n\n\n\n\nThe arguments:\n\n\n\n\nName/Company\n\n\nPhone number\n\n\nE-mail (checked for validity; if it isn't a valid e-mail, it will still be shown but not linked with a mailto.)\n\n\nExtra text (at the bottom)\n\n\n\n\nProduces:\n\n\nMartian Waffles<br>\n&#9742; 123-654-7890<br>\n&#9993; <a href=\"mailto:info@martian-waffles.com\">info@martian-waffles.com</a><br>\nCall us or e-mail us at anytime!<br>\n\n\n\n\nThe &...;'s are a symbol for a phone and a symbol for an envelope, respectively.",
+            "title": "Contact"
+        },
+        {
+            "location": "/classes/contact/#contact-class",
+            "text": "This class is a simple one-liner for making a Contact Information area.",
+            "title": "Contact Class"
+        },
+        {
+            "location": "/classes/contact/#syntax",
+            "text": "obj = Bold(\"Martian Waffles\", \"123-654-7890\", \"info@martian-waffles.com\", \"Call us or e-mail us at anytime!\")  The arguments:   Name/Company  Phone number  E-mail (checked for validity; if it isn't a valid e-mail, it will still be shown but not linked with a mailto.)  Extra text (at the bottom)   Produces:  Martian Waffles<br>\n&#9742; 123-654-7890<br>\n&#9993; <a href=\"mailto:info@martian-waffles.com\">info@martian-waffles.com</a><br>\nCall us or e-mail us at anytime!<br>  The &...;'s are a symbol for a phone and a symbol for an envelope, respectively.",
+            "title": "Syntax"
+        },
+        {
+            "location": "/classes/external/",
+            "text": "External Class\n\n\nThis class is the dars wrapper for the \n<link href=\"\" rel=\"\" />\n element of HTML.\n\n\nSyntax\n\n\nobj = Bold(\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css\", \"stylesheet\")\n\n\n\n\nThe first argument is the location and the second argument is the type.\n\n\nProduces:\n\n\n<link href=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css\" rel=\"stylesheet\" />",
+            "title": "External"
+        },
+        {
+            "location": "/classes/external/#external-class",
+            "text": "This class is the dars wrapper for the  <link href=\"\" rel=\"\" />  element of HTML.",
+            "title": "External Class"
+        },
+        {
+            "location": "/classes/external/#syntax",
+            "text": "obj = Bold(\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css\", \"stylesheet\")  The first argument is the location and the second argument is the type.  Produces:  <link href=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css\" rel=\"stylesheet\" />",
+            "title": "Syntax"
         }
     ]
 }
