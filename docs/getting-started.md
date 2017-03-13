@@ -24,3 +24,32 @@ Now open the folder you got and edit the `user.py` file in your favorite editor 
     page.close()
 
 Although the code from `def code(page):` to `page.addDefaultStyle()` changes a lot.
+
+## Creating a simple site
+
+To make the very basic site, open up our `user.py` file again in your favorite editor. dars comes with a bunch of classes, each representing a single or set of HTML tags. To create a Paragraph on your site, clear out all the code from `def code(page):` to `page.addDefaultStyle()` and replace it with:
+
+    para = Paragraph("Hello World!")
+    page.append(para)
+
+Let's walk through this. The first line creates a Paragraph object, which takes one mandatory argument, the text. I've given it the text "Hello World!".
+
+The second line adds the para object to our site, stored in the variable "page". **Note that the order things go on your page is the order you `append()` them in.**
+
+### Testing
+
+dars comes bundled with a teeny-tiny development-quality webserver **for testing your code**. It's really just not good enough, and dars produces normal HTML code so when you've done working dev magic, you can use something high-quality like [Apache](https://httpd.apache.org/).
+
+But until then, you can use the one that dars gave you. First, generate your code by entering the following into your favorite shell (make sure you're in the "dars" directory you downloaded!):
+
+```text
+$ python dars.py generate
+```
+
+It should give you some info, then exit. You can then start the server with:
+
+```text
+$ python dars.py serve
+```
+
+Which sets everything up and gets your mini-server going. You can then visit <http://localhost/> to view your page!

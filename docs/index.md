@@ -1,4 +1,4 @@
-# Welcome to the Dars Documentation!
+# Welcome to the [Dars](http://darssites.github.io) Documentation!
 
 The simple, Python-based HTML alternative that can double as a framework.
 

@@ -8,3 +8,7 @@ pages:
   - Home: 'index.md'
   - Docs:
     - Getting Started: 'getting-started.md'
+    - Classes: # The actuall class-by-class docs
+      - Paragraph: 'classes/paragraph.md'
+      - Heading: 'classes/heading.md'
+      - Link: 'classes/link.md'
