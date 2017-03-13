@@ -66,6 +66,33 @@
 </li>
 
                     
+                        
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Classes</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../classes/paragraph/">Paragraph</a>
+</li>
+
+        
+            
+<li >
+    <a href="../classes/heading/">Heading</a>
+</li>
+
+        
+            
+<li >
+    <a href="../classes/link/">Link</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                    
                     </ul>
                 </li>
             
@@ -84,8 +111,8 @@
                         <i class="fa fa-arrow-left"></i> Previous
                     </a>
                 </li>
-                <li class="disabled">
-                    <a rel="prev" >
+                <li >
+                    <a rel="prev" href="../classes/paragraph/">
                         Next <i class="fa fa-arrow-right"></i>
                     </a>
                 </li>
@@ -109,6 +136,11 @@
     <ul class="nav bs-sidenav">
     
         <li class="main active"><a href="#getting-started">Getting Started</a></li>
+        
+    
+        <li class="main "><a href="#creating-a-simple-site">Creating a simple site</a></li>
+        
+            <li><a href="#testing">Testing</a></li>
         
     
     </ul>
@@ -135,7 +167,25 @@ page.addDefaultStyle()
 
 page.close()
 </code></pre>
-<p>Although the code from <code>def code(page):</code> to <code>page.addDefaultStyle()</code> changes a lot.</p></div>
+<p>Although the code from <code>def code(page):</code> to <code>page.addDefaultStyle()</code> changes a lot.</p>
+<h2 id="creating-a-simple-site">Creating a simple site</h2>
+<p>To make the very basic site, open up our <code>user.py</code> file again in your favorite editor. dars comes with a bunch of classes, each representing a single or set of HTML tags. To create a Paragraph on your site, clear out all the code from <code>def code(page):</code> to <code>page.addDefaultStyle()</code> and replace it with:</p>
+<pre><code>para = Paragraph("Hello World!")
+page.append(para)
+</code></pre>
+<p>Let's walk through this. The first line creates a Paragraph object, which takes one mandatory argument, the text. I've given it the text "Hello World!".</p>
+<p>The second line adds the para object to our site, stored in the variable "page". <strong>Note that the order things go on your page is the order you <code>append()</code> them in.</strong></p>
+<h3 id="testing">Testing</h3>
+<p>dars comes bundled with a teeny-tiny development-quality webserver <strong>for testing your code</strong>. It's really just not good enough, and dars produces normal HTML code so when you've done working dev magic, you can use something high-quality like <a href="https://httpd.apache.org/">Apache</a>.</p>
+<p>But until then, you can use the one that dars gave you. First, generate your code by entering the following into your favorite shell (make sure you're in the "dars" directory you downloaded!):</p>
+<pre><code class="text">$ python dars.py generate
+</code></pre>
+
+<p>It should give you some info, then exit. You can then start the server with:</p>
+<pre><code class="text">$ python dars.py serve
+</code></pre>
+
+<p>Which sets everything up and gets your mini-server going. You can then visit <a href="http://localhost/">http://localhost/</a> to view your page!</p></div>
         </div>
 
         <footer class="col-md-12">
