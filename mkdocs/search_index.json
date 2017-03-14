@@ -164,6 +164,111 @@
             "location": "/classes/external/#syntax",
             "text": "obj = Bold(\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css\", \"stylesheet\")  The first argument is the location and the second argument is the type.  Produces:  <link href=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css\" rel=\"stylesheet\" />",
             "title": "Syntax"
+        },
+        {
+            "location": "/classes/image/",
+            "text": "Image Class\n\n\nThis class is the dars wrapper for the \n<img src=\"\" alt=\"\" />\n element of HTML.\n\n\nSyntax\n\n\nobj = Image(\"http://example.com/spam.jpg\", \"The Face of True Beauty\")\n\n\n\n\nThe first argument is the image's source, and the second is the alternate description text if the image fails to load.\n\n\nProduces:\n\n\n<img src=\"http://example.com/spam.jpg\" alt=\"The Face of True Beauty\" />\n\n\n\n\nYou can also specify the width and height to scale the image to. If only the width or the height is provided, it will scale the other to keep the original Aspect Ratio.\n\n\nobj = Image(\"http://example.com/spam.jpg\", \"The Face of True Beauty\", height=2000)\n\n\n\n\n<img src=\"http://example.com/spam.jpg\" alt=\"The Face of True Beauty\" height=\"2000\"/>",
+            "title": "Image"
+        },
+        {
+            "location": "/classes/image/#image-class",
+            "text": "This class is the dars wrapper for the  <img src=\"\" alt=\"\" />  element of HTML.",
+            "title": "Image Class"
+        },
+        {
+            "location": "/classes/image/#syntax",
+            "text": "obj = Image(\"http://example.com/spam.jpg\", \"The Face of True Beauty\")  The first argument is the image's source, and the second is the alternate description text if the image fails to load.  Produces:  <img src=\"http://example.com/spam.jpg\" alt=\"The Face of True Beauty\" />  You can also specify the width and height to scale the image to. If only the width or the height is provided, it will scale the other to keep the original Aspect Ratio.  obj = Image(\"http://example.com/spam.jpg\", \"The Face of True Beauty\", height=2000)  <img src=\"http://example.com/spam.jpg\" alt=\"The Face of True Beauty\" height=\"2000\"/>",
+            "title": "Syntax"
+        },
+        {
+            "location": "/classes/italics/",
+            "text": "Italics Class\n\n\nThis class is the dars wrapper for the \n<i></i>\n element of HTML.\n\n\nSyntax\n\n\nobj = Italics(\"spam-o\")\n\n\n\n\nProduces:\n\n\n<i>spam-o</i>",
+            "title": "Italics"
+        },
+        {
+            "location": "/classes/italics/#italics-class",
+            "text": "This class is the dars wrapper for the  <i></i>  element of HTML.",
+            "title": "Italics Class"
+        },
+        {
+            "location": "/classes/italics/#syntax",
+            "text": "obj = Italics(\"spam-o\")  Produces:  <i>spam-o</i>",
+            "title": "Syntax"
+        },
+        {
+            "location": "/classes/jscript/",
+            "text": "JScript Class\n\n\nThis class is the dars wrapper for the \n<script></script>\n element of HTML. For more info on JavaScript, go \nhere\n.\n\n\nSyntax\n\n\nobj = JScript('''\nfunction buttonClick() {\n  alert(\"You have pressed the button!\")\n}\n''')\n\n\n\n\nProduces:\n\n\n<script>\nfunction buttonClick() {\n  alert(\"You have pressed the button!\")\n}\n</script>",
+            "title": "JScript"
+        },
+        {
+            "location": "/classes/jscript/#jscript-class",
+            "text": "This class is the dars wrapper for the  <script></script>  element of HTML. For more info on JavaScript, go  here .",
+            "title": "JScript Class"
+        },
+        {
+            "location": "/classes/jscript/#syntax",
+            "text": "obj = JScript('''\nfunction buttonClick() {\n  alert(\"You have pressed the button!\")\n}\n''')  Produces:  <script>\nfunction buttonClick() {\n  alert(\"You have pressed the button!\")\n}\n</script>",
+            "title": "Syntax"
+        },
+        {
+            "location": "/classes/list/",
+            "text": "List Class\n\n\nThis class is the dars wrapper for the \n<[o/u]l><li></li></[o/u]l>\n element of HTML.\n\n\nSyntax\n\n\nobj = List(\"spam-o\", \"bacon\", \"waffles\", \"...and many more!\")\n\n\n\n\nProduces:\n\n\n<ul>\n  <li>spam-o</li>\n  <li>bacon</li>\n  <li>waffles</li>\n  <li>...and many more!</li>\n</ul>\n\n\n\n\nYou can provide any amount of strings as list items. To make a numbered list (ordered) you can do:\n\n\nobj = List(\"spam-o\", \"bacon\", \"waffles\", \"...and many more!\", ordered=True)\n\n\n\n\nWhich produces:\n\n\n<ol>\n  <li>spam-o</li>\n  <li>bacon</li>\n  <li>waffles</li>\n  <li>...and many more!</li>\n</ol>\n\n\n\n\nYou can also customize the text before the list item (the \"bullet\"). A list of types:\n\n\nUnordered List Types:\n\n\n\n\ndisc (default)\n\n\ncircle\n\n\nsquare\n\n\nnone\n\n\n\n\nOrdered List Types:\n\n\n\n\n1 (number the items) (default)\n\n\nA (uppercase alphabet the items)\n\n\na (lowercase alphabet the items)\n\n\nI (uppercase roman numerals)\n\n\ni (lowercase roman numerals)\n\n\n\n\nobj = List(\"spam-o\", \"bacon\", \"waffles\", \"...and many more!\", type=\"square\")\n\n\n\n\n<ul style=\"list-style-type:square\">\n  <li>spam-o</li>\n  <li>bacon</li>\n  <li>waffles</li>\n  <li>...and many more!</li>\n</ul>",
+            "title": "List"
+        },
+        {
+            "location": "/classes/list/#list-class",
+            "text": "This class is the dars wrapper for the  <[o/u]l><li></li></[o/u]l>  element of HTML.",
+            "title": "List Class"
+        },
+        {
+            "location": "/classes/list/#syntax",
+            "text": "obj = List(\"spam-o\", \"bacon\", \"waffles\", \"...and many more!\")  Produces:  <ul>\n  <li>spam-o</li>\n  <li>bacon</li>\n  <li>waffles</li>\n  <li>...and many more!</li>\n</ul>  You can provide any amount of strings as list items. To make a numbered list (ordered) you can do:  obj = List(\"spam-o\", \"bacon\", \"waffles\", \"...and many more!\", ordered=True)  Which produces:  <ol>\n  <li>spam-o</li>\n  <li>bacon</li>\n  <li>waffles</li>\n  <li>...and many more!</li>\n</ol>  You can also customize the text before the list item (the \"bullet\"). A list of types:  Unordered List Types:   disc (default)  circle  square  none   Ordered List Types:   1 (number the items) (default)  A (uppercase alphabet the items)  a (lowercase alphabet the items)  I (uppercase roman numerals)  i (lowercase roman numerals)   obj = List(\"spam-o\", \"bacon\", \"waffles\", \"...and many more!\", type=\"square\")  <ul style=\"list-style-type:square\">\n  <li>spam-o</li>\n  <li>bacon</li>\n  <li>waffles</li>\n  <li>...and many more!</li>\n</ul>",
+            "title": "Syntax"
+        },
+        {
+            "location": "/classes/mark/",
+            "text": "Mark Class\n\n\nThis class is the dars wrapper for the \n<mark></mark>\n element of HTML. (The mark element highlights text)\n\n\nSyntax\n\n\nobj = Mark(\"spam-o\")\n\n\n\n\nProduces:\n\n\n<mark>spam-o</mark>",
+            "title": "Mark"
+        },
+        {
+            "location": "/classes/mark/#mark-class",
+            "text": "This class is the dars wrapper for the  <mark></mark>  element of HTML. (The mark element highlights text)",
+            "title": "Mark Class"
+        },
+        {
+            "location": "/classes/mark/#syntax",
+            "text": "obj = Mark(\"spam-o\")  Produces:  <mark>spam-o</mark>",
+            "title": "Syntax"
+        },
+        {
+            "location": "/classes/rule/",
+            "text": "Rule, Stylesheet, and Tags Class\n\n\nThese classes are used for stylizing your page without using external stylesheets.\n\n\nThe Rule class represents an individual Rule.\nThe Stylesheet class is a group of Rules.\nThe Tags class helps you get HTML names of dars classes. (Header = h1)\n\n\nTo be frank, these classes are a bit clunky and I personally recommend using an external stylesheet instead.\n\n\nSyntax\n\n\nTo apply a color style to all headers on level 1:\n\n\nstyle = Stylesheet()\nredRule = Rule(\"color\", \"red\")\nstyle.addRule(getHTMLTag(\"Header\"), redRule.text)\n\n\n\n\nWhich gives:\n\n\n<style>\nh1 {\n  color: red;\n}\n</style>",
+            "title": "Rule, Stylesheet, and Tags"
+        },
+        {
+            "location": "/classes/rule/#rule-stylesheet-and-tags-class",
+            "text": "These classes are used for stylizing your page without using external stylesheets.  The Rule class represents an individual Rule.\nThe Stylesheet class is a group of Rules.\nThe Tags class helps you get HTML names of dars classes. (Header = h1)  To be frank, these classes are a bit clunky and I personally recommend using an external stylesheet instead.",
+            "title": "Rule, Stylesheet, and Tags Class"
+        },
+        {
+            "location": "/classes/rule/#syntax",
+            "text": "To apply a color style to all headers on level 1:  style = Stylesheet()\nredRule = Rule(\"color\", \"red\")\nstyle.addRule(getHTMLTag(\"Header\"), redRule.text)  Which gives:  <style>\nh1 {\n  color: red;\n}\n</style>",
+            "title": "Syntax"
+        },
+        {
+            "location": "/classes/scripted/",
+            "text": "Scripted Class\n\n\nThis class is the dars wrapper for the \n<[sup/sub]></[sup/sub]>\n element of HTML. NOTE: This has nothing to do with JavaScript. That's the JScript class.\n\n\nSyntax\n\n\nobj = Scripted(\"spam-o\")\n\n\n\n\nProduces:\n\n\n<sup>spam-o</sup>\n\n\n\n\nTo do a subscript, you have to set the type argument:\n\n\nobj = Scripted(\"spam-o\", type=\"subscript\")\n\n\n\n\n<sub>spam-o</sub>",
+            "title": "Scripted"
+        },
+        {
+            "location": "/classes/scripted/#scripted-class",
+            "text": "This class is the dars wrapper for the  <[sup/sub]></[sup/sub]>  element of HTML. NOTE: This has nothing to do with JavaScript. That's the JScript class.",
+            "title": "Scripted Class"
+        },
+        {
+            "location": "/classes/scripted/#syntax",
+            "text": "obj = Scripted(\"spam-o\")  Produces:  <sup>spam-o</sup>  To do a subscript, you have to set the type argument:  obj = Scripted(\"spam-o\", type=\"subscript\")  <sub>spam-o</sub>",
+            "title": "Syntax"
         }
     ]
 }
