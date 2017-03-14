@@ -241,21 +241,6 @@
             "title": "Syntax"
         },
         {
-            "location": "/classes/rule/",
-            "text": "Rule, Stylesheet, and Tags Class\n\n\nThese classes are used for stylizing your page without using external stylesheets.\n\n\nThe Rule class represents an individual Rule.\nThe Stylesheet class is a group of Rules.\nThe Tags class helps you get HTML names of dars classes. (Header = h1)\n\n\nTo be frank, these classes are a bit clunky and I personally recommend using an external stylesheet instead.\n\n\nSyntax\n\n\nTo apply a color style to all headers on level 1:\n\n\nstyle = Stylesheet()\nredRule = Rule(\"color\", \"red\")\nstyle.addRule(getHTMLTag(\"Header\"), redRule.text)\n\n\n\n\nWhich gives:\n\n\n<style>\nh1 {\n  color: red;\n}\n</style>",
-            "title": "Rule, Stylesheet, and Tags"
-        },
-        {
-            "location": "/classes/rule/#rule-stylesheet-and-tags-class",
-            "text": "These classes are used for stylizing your page without using external stylesheets.  The Rule class represents an individual Rule.\nThe Stylesheet class is a group of Rules.\nThe Tags class helps you get HTML names of dars classes. (Header = h1)  To be frank, these classes are a bit clunky and I personally recommend using an external stylesheet instead.",
-            "title": "Rule, Stylesheet, and Tags Class"
-        },
-        {
-            "location": "/classes/rule/#syntax",
-            "text": "To apply a color style to all headers on level 1:  style = Stylesheet()\nredRule = Rule(\"color\", \"red\")\nstyle.addRule(getHTMLTag(\"Header\"), redRule.text)  Which gives:  <style>\nh1 {\n  color: red;\n}\n</style>",
-            "title": "Syntax"
-        },
-        {
             "location": "/classes/scripted/",
             "text": "Scripted Class\n\n\nThis class is the dars wrapper for the \n<[sup/sub]></[sup/sub]>\n element of HTML. NOTE: This has nothing to do with JavaScript. That's the JScript class.\n\n\nSyntax\n\n\nobj = Scripted(\"spam-o\")\n\n\n\n\nProduces:\n\n\n<sup>spam-o</sup>\n\n\n\n\nTo do a subscript, you have to set the type argument:\n\n\nobj = Scripted(\"spam-o\", type=\"subscript\")\n\n\n\n\n<sub>spam-o</sub>",
             "title": "Scripted"
@@ -268,6 +253,21 @@
         {
             "location": "/classes/scripted/#syntax",
             "text": "obj = Scripted(\"spam-o\")  Produces:  <sup>spam-o</sup>  To do a subscript, you have to set the type argument:  obj = Scripted(\"spam-o\", type=\"subscript\")  <sub>spam-o</sub>",
+            "title": "Syntax"
+        },
+        {
+            "location": "/classes/button/",
+            "text": "Button Class\n\n\nThis class is the dars wrapper for the \n<button></button>\n element of HTML.\n\n\nSyntax\n\n\nobj = Button(\"spam-o\", onclick=\"hello()\")\n\n\n\n\nProduces:\n\n\n<button onclick=\"hello()\">spam-o</button>\n\n\n\n\nYou can also easily make the link go somewhere:\n\n\nobj = Button(\"spam-o\", href=\"http://example.com/\")\n\n\n\n\n<a href=\"http://example.com/\">\n  <button>spam-o</button>\n</a>",
+            "title": "Button"
+        },
+        {
+            "location": "/classes/button/#button-class",
+            "text": "This class is the dars wrapper for the  <button></button>  element of HTML.",
+            "title": "Button Class"
+        },
+        {
+            "location": "/classes/button/#syntax",
+            "text": "obj = Button(\"spam-o\", onclick=\"hello()\")  Produces:  <button onclick=\"hello()\">spam-o</button>  You can also easily make the link go somewhere:  obj = Button(\"spam-o\", href=\"http://example.com/\")  <a href=\"http://example.com/\">\n  <button>spam-o</button>\n</a>",
             "title": "Syntax"
         }
     ]

@@ -9,7 +9,7 @@
         
         <link rel="shortcut icon" href="../../img/favicon.ico">
 
-	<title>Rule, Stylesheet, and Tags - Dars Docs</title>
+	<title>Button - Dars Docs</title>
 
         <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../../css/font-awesome-4.0.3.css" rel="stylesheet">
@@ -156,14 +156,14 @@
 
         
             
-<li class="active">
-    <a href="./">Rule, Stylesheet, and Tags</a>
+<li >
+    <a href="../scripted/">Scripted</a>
 </li>
 
         
             
-<li >
-    <a href="../scripted/">Scripted</a>
+<li class="active">
+    <a href="./">Button</a>
 </li>
 
         
@@ -185,12 +185,12 @@
                     </a>
                 </li>
                 <li >
-                    <a rel="next" href="../mark/">
+                    <a rel="next" href="../scripted/">
                         <i class="fa fa-arrow-left"></i> Previous
                     </a>
                 </li>
-                <li >
-                    <a rel="prev" href="../scripted/">
+                <li class="disabled">
+                    <a rel="prev" >
                         Next <i class="fa fa-arrow-right"></i>
                     </a>
                 </li>
@@ -213,7 +213,7 @@
             <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
     
-        <li class="main active"><a href="#rule-stylesheet-and-tags-class">Rule, Stylesheet, and Tags Class</a></li>
+        <li class="main active"><a href="#button-class">Button Class</a></li>
         
             <li><a href="#syntax">Syntax</a></li>
         
@@ -222,25 +222,23 @@
 </div></div>
             <div class="col-md-9" role="main">
 
-<h1 id="rule-stylesheet-and-tags-class">Rule, Stylesheet, and Tags Class</h1>
-<p>These classes are used for stylizing your page without using external stylesheets.</p>
-<p>The Rule class represents an individual Rule.
-The Stylesheet class is a group of Rules.
-The Tags class helps you get HTML names of dars classes. (Header = h1)</p>
-<p>To be frank, these classes are a bit clunky and I personally recommend using an external stylesheet instead.</p>
+<h1 id="button-class">Button Class</h1>
+<p>This class is the dars wrapper for the <code>&lt;button&gt;&lt;/button&gt;</code> element of HTML.</p>
 <h3 id="syntax">Syntax</h3>
-<p>To apply a color style to all headers on level 1:</p>
-<pre><code class="python">style = Stylesheet()
-redRule = Rule(&quot;color&quot;, &quot;red&quot;)
-style.addRule(getHTMLTag(&quot;Header&quot;), redRule.text)
+<pre><code class="python">obj = Button(&quot;spam-o&quot;, onclick=&quot;hello()&quot;)
 </code></pre>
 
-<p>Which gives:</p>
-<pre><code class="HTML">&lt;style&gt;
-h1 {
-  color: red;
-}
-&lt;/style&gt;
+<p>Produces:</p>
+<pre><code class="HTML">&lt;button onclick=&quot;hello()&quot;&gt;spam-o&lt;/button&gt;
+</code></pre>
+
+<p>You can also easily make the link go somewhere:</p>
+<pre><code class="python">obj = Button(&quot;spam-o&quot;, href=&quot;http://example.com/&quot;)
+</code></pre>
+
+<pre><code class="HTML">&lt;a href=&quot;http://example.com/&quot;&gt;
+  &lt;button&gt;spam-o&lt;/button&gt;
+&lt;/a&gt;
 </code></pre></div>
         </div>
 
