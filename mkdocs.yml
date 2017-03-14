@@ -23,5 +23,5 @@ pages:
       - JScript: 'classes/jscript.md'
       - List: 'classes/list.md'
       - Mark: 'classes/mark.md'
-      - Rule, Stylesheet, and Tags: 'classes/rule.md'
       - Scripted: 'classes/scripted.md'
+      - Button: 'classes/button.md'
