@@ -1,6 +1,6 @@
 # Paragraph Class
 
-This class is the dars wrapper for the `<p></p>` element in HTML. This is for displaying standard text, but also has optional markdown support.
+This class is the dars wrapper for the `<p></p>` element in HTML. This is for displaying standard text, but also has markdown support.
 
 ### Syntax
 
