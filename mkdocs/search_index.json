@@ -32,12 +32,12 @@
         },
         {
             "location": "/classes/paragraph/",
-            "text": "Paragraph Class\n\n\nThis class is the dars wrapper for the \n<p></p>\n element in HTML. This is for displaying standard text, but also has optional markdown support.\n\n\nSyntax\n\n\nWithout Markdown:\n\n\nobj = Paragraph(\"paragraph text\")\n\n\n\n\nProduces:\n\n\n<p>paragraph text</p>\n\n\n\n\nThe Paragraph object also auto-parses markdown:\n\n\nobj = Paragraph(\"**formatted** _paragraph_ `text`\")\n\n\n\n\nProduces:\n\n\n<p><b>formatted</b> <i>paragraph</i> <code>text</code></p>\n\n\n\n\nThis would create way too many objects if you were to write this out with Bold, Code, and Italics objects, making this almost like a shorthand notation.",
+            "text": "Paragraph Class\n\n\nThis class is the dars wrapper for the \n<p></p>\n element in HTML. This is for displaying standard text, but also has markdown support.\n\n\nSyntax\n\n\nWithout Markdown:\n\n\nobj = Paragraph(\"paragraph text\")\n\n\n\n\nProduces:\n\n\n<p>paragraph text</p>\n\n\n\n\nThe Paragraph object also auto-parses markdown:\n\n\nobj = Paragraph(\"**formatted** _paragraph_ `text`\")\n\n\n\n\nProduces:\n\n\n<p><b>formatted</b> <i>paragraph</i> <code>text</code></p>\n\n\n\n\nThis would create way too many objects if you were to write this out with Bold, Code, and Italics objects, making this almost like a shorthand notation.",
             "title": "Paragraph"
         },
         {
             "location": "/classes/paragraph/#paragraph-class",
-            "text": "This class is the dars wrapper for the  <p></p>  element in HTML. This is for displaying standard text, but also has optional markdown support.",
+            "text": "This class is the dars wrapper for the  <p></p>  element in HTML. This is for displaying standard text, but also has markdown support.",
             "title": "Paragraph Class"
         },
         {
