@@ -16,10 +16,10 @@ Produces:
 <p>paragraph text</p>
 ```
 
-And with Markdown:
+The Paragraph object also auto-parses markdown:
 
 ```python
-obj = Paragraph("**formatted** _paragraph_ `text`", markdown=True)
+obj = Paragraph("**formatted** _paragraph_ `text`")
 ```
 
 Produces:
