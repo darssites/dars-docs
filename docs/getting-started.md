@@ -38,18 +38,18 @@ The second line adds the para object to our site, stored in the variable "page".
 
 ### Testing
 
-dars comes bundled with a teeny-tiny development-quality webserver **for testing your code**. It's really just not good enough, and dars produces normal HTML code so when you've done working dev magic, you can use something high-quality like [Apache](https://httpd.apache.org/).
+dars comes bundled with a teeny-tiny development-quality webserver **for testing your code**. It's really just not good enough for production, and dars produces normal HTML code so when you've done working dev magic, you can use something high-quality like [Apache](https://httpd.apache.org/).
 
 But until then, you can use the one that dars gave you. First, generate your code by entering the following into your favorite shell (make sure you're in the "dars" directory you downloaded!):
 
 ```text
-$ python dars.py generate
+$ python dars.py --generate
 ```
 
 It should give you some info, then exit. You can then start the server with:
 
 ```text
-$ python dars.py serve
+$ python dars.py --serve
 ```
 
 Which sets everything up and gets your mini-server going. You can then visit <http://localhost/> to view your page!
