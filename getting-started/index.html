@@ -254,13 +254,13 @@ page.append(para)
 <p>Let's walk through this. The first line creates a Paragraph object, which takes one mandatory argument, the text. I've given it the text "Hello World!".</p>
 <p>The second line adds the para object to our site, stored in the variable "page". <strong>Note that the order things go on your page is the order you <code>append()</code> them in.</strong></p>
 <h3 id="testing">Testing</h3>
-<p>dars comes bundled with a teeny-tiny development-quality webserver <strong>for testing your code</strong>. It's really just not good enough, and dars produces normal HTML code so when you've done working dev magic, you can use something high-quality like <a href="https://httpd.apache.org/">Apache</a>.</p>
+<p>dars comes bundled with a teeny-tiny development-quality webserver <strong>for testing your code</strong>. It's really just not good enough for production, and dars produces normal HTML code so when you've done working dev magic, you can use something high-quality like <a href="https://httpd.apache.org/">Apache</a>.</p>
 <p>But until then, you can use the one that dars gave you. First, generate your code by entering the following into your favorite shell (make sure you're in the "dars" directory you downloaded!):</p>
-<pre><code class="text">$ python dars.py generate
+<pre><code class="text">$ python dars.py --generate
 </code></pre>
 
 <p>It should give you some info, then exit. You can then start the server with:</p>
-<pre><code class="text">$ python dars.py serve
+<pre><code class="text">$ python dars.py --serve
 </code></pre>
 
 <p>Which sets everything up and gets your mini-server going. You can then visit <a href="http://localhost/">http://localhost/</a> to view your page!</p></div>
